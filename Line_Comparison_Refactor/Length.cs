@@ -25,11 +25,17 @@ namespace Line_Comparison_Refactor
             Console.WriteLine("Length Of the coordinates ({0},{1}) and ({2},{3}) is : {4}", x3, y3, x4, y4, length_Two);
             Length l = new Length();
             l.equal(length_One, length_Two);
+            comapre(length_One, length_Two);
             
         }
         public void equal(double length_One,double length_Two)
         {
             Console.WriteLine("Equals() Method : " + length_One.Equals(length_Two));
+        }
+
+        public static void comapre(double length_One, double length_Two)
+        {
+            Console.WriteLine("CompareTo() Method : " + length_One.CompareTo(length_Two));
         }
     }
 }
